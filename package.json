@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "next start",
+    "migrate": "node scripts/migrate.mjs",
+    "start": "npm run migrate && next start",
     "lint": "eslint"
   },
   "dependencies": {
